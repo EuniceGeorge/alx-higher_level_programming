@@ -6,5 +6,5 @@ if number > 0:
 elif number < 0:
     str = "is negative"
 else:
-    str ="is zero"
-print("{:d}".format(number),str)
+    str = "is zero"
+print("{:d}".format(number), str)
