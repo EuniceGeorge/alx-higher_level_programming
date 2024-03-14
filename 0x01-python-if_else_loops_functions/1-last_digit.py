@@ -8,5 +8,6 @@ elif lastdigit == 0:
     string = "and is 0"
 else:
     string = "and is less than 6 and not 0"
-    print('Last digit of', '{:d}'.format(number), 'is ', end="")
-    print('{:d}'.format(lastdigit), string)
+
+print('Last digit of', '{:d}'.format(number), 'is ', end="")
+print('{:d}'.format(lastdigit), string)
