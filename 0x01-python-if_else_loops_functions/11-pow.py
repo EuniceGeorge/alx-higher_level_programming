@@ -11,6 +11,6 @@ def pow(a, b):
     while b > 0:
         if b % 2 == 1:
             result *= a
-            a *= a
-            b //= 2
+        a *= a
+        b //= 2
     return (result)
