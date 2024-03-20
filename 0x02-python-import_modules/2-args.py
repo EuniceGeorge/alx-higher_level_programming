@@ -4,7 +4,7 @@ if __name__ == "__main__":
     val = ""
     argc = len(argv) - 1
     if argc > 1:
-        delim = ":s"
+        delim = "s:"
     elif argc == 0:
         delim = "."
     else:
