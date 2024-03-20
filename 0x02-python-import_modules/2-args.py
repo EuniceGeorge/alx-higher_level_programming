@@ -6,7 +6,7 @@ if __name__ == "__main__":
     if argc > 1:
         delim = "s:"
     elif argc == 0:
-        delim = "."
+        delim = "s."
     else:
         delim = ":"
     for i, ag in enumerate(argv[1:]):
