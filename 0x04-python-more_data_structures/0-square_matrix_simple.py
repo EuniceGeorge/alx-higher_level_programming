@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     tmp = []
     for x in matrix:
