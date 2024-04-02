@@ -4,4 +4,3 @@ def raise_exception():
         result = 1 + 'a'
     except TypeError as te:
         raise te
-
