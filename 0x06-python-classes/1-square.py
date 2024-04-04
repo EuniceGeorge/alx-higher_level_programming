@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
 This module demonstrates documentation as specified by the `Google Python
