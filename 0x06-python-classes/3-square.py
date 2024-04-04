@@ -16,7 +16,7 @@ class Square:
         """
         Initializes a Square object with a specified size.
 
-        Parameters:
+        Parametrs:
         - size (int): The size of the square's side. Default is 0.
 
         Raises:
