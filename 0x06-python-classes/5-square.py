@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+"""
+This module computes the square of an input integer.
+"""
+
 
 class Square:
     """
