@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
 This module carries out the operation'square' for each input.
