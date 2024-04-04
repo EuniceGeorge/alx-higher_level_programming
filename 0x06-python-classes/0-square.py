@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 class Square:
-    pass
     """
-    A class to define empty squares
-    
-    pass:
+    This is an empty class named EmptyClass.
 
-        a place holder indicating an empty block
-        """
+    Attributes:
+        No attributes defined.
+
+    Methods:
+        No methods defined.
+    """
+    pass
         
