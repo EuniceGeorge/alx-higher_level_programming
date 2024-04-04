@@ -13,5 +13,6 @@ class Square:
         initialization of square number
         Args:
             size(int): the number
-            """
-        self.size = size
+           """ 
+        self.__size = size
+        
