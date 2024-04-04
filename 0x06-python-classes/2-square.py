@@ -11,7 +11,11 @@ class Square:
         """
          initialization of square number
          Args:
-             size(int): the number
+             size(int):The size of the square's side
+
+        Raises:
+        - TypeError: If size is not an integer.
+        - ValueError: If size is less than 0.
              """
 
         if not isinstance(self, size):
