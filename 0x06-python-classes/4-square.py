@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+"""
+This module finds the square of an input, which is an integer.
+"""
+
 
 class Square:
     """
