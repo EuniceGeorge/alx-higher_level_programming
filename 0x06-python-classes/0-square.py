@@ -10,4 +10,3 @@ class Square:
         No methods defined.
     """
     pass
-        
