@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+"""
+This module create a class Square gets the square of an input
+"""
+
 
 class Square:
     """
