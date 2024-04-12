@@ -8,5 +8,5 @@ def print_square(size):
         raise TypeError("size must be an integer")
     for i in range(size):
         for j in range(size):
-            print("#", size, end="")
+            print("#", end="")
         print()

@@ -1,12 +1,18 @@
 #!/usr/bin/python3
-#0-add_integer.py
+"""
+This is the add_integer module
+"""
+
+
 def add_integer(a, b=98):
 
-    if not isinstance(a, int) or not isinstance(a, float):
+    """
+    Returns the sum of a and b
+
+    """
+    if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
-    if not isinstance(b, int) or not isinstance(b, float):
-        raise TypeError("b must an integer")
-    if isinstance(a, float) or isinstance(b, float):
-        a = int(a)
-        b = int(b)
-    return a + b
+    elif not isinstance(b, (int,float)):
+        raise TypeError("b must be an integer")
+    return(int(a)+int(b))
+
