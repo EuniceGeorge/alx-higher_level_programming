@@ -1,5 +1,13 @@
 #!/usr/bin/python3
+"""
+This module prints the square  given a size
+"""
+
+
 def print_square(size):
+    """
+    prints a square
+    """
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
