@@ -7,6 +7,14 @@ It returns the sum of two numbers
 
 >>> add_integer = __import__("0-add_integer").add_integer
 
+
+Returns the sum of a and b
+
+
+>>> add_integer(3, 5)
+8
+
+
 Correct Usage:
 =====================================================
 
@@ -44,3 +52,13 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 	...
 TypeError: a must be an integer
+
+>>> add_integer('c', 8)
+Traceback (most recent call last):
+       ...
+TypeError: a must be an integer
+
+>>> add_integer(8, 'j')
+Traceback (most recent call last):
+       ...
+TypeError: b must be an integer
