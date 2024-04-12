@@ -1,75 +1,55 @@
-This module divides all elements of a matrix
-=======================================================
+The matrix_divided Module:
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
 
-it divides all the elements of matrix_divided
+Correct Usage:
 
->>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+    >>> print(matrix_divided(matrix, 2))
+    [[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
 
-divides elements of a matrix by divides
+    >>> print(matrix_divided(matrix, -2))
+    [[-0.5, -1.0, -1.5], [-2.0, -2.5, -3.0]]
 
->>> matrix = [
-... 	[1, 2, 3],
-... 	[4, 5, 6]
-...	]
->>> print(matrix_divided(matrix, 3))
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+    >>> print(matrix_divided(matrix, 2.5))
+    [[0.4, 0.8, 1.2], [1.6, 2.0, 2.4]]
+
+    >>> print(matrix_divided(matrix, 3))
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+    >>> print(matrix_divided(matrix, True))
+    [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+
+    >>> matrix = [[1, 2, 3]]
+    >>> print(matrix_divided(matrix, 1))
+    [[1.0, 2.0, 3.0]]
+
+Incorrect Usage:
+
+    >>> print(matrix_divided(matrix, None))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> print(matrix_divided(matrix, 0))
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    >>> print(matrix_divided(matrix, False))
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    >>> matrix = None
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 
-The correct usage of the module:
-========================================================
+    >>> matrix = [[1, 2, 3], [4, 5, 6], {7, 8, 9}]
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
->>> matrix = [[1, 2, 3],[4, 5, 6]]
->>> print(matrix_divided(matrix, 3))
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+    >>> matrix = [[1, 2, 3], [4, 5, 6, 7]]
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
 
->>> matrix = [[1, 2, 3],[4, 5, 6]]
->>> print(matrix_divided(matrix, 3.0))
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
-
->>> matrix = [[1, 2, 3],[4, 5, 6]]
->>> print(matrix_divided(matrix, -2))
-[[-0.5, -1.0, -1.5], [-2.0, -2.5, -3.0]]
-
->>> matrix = [[1, 2, 3],[4, 5, 6]]
->>> print(matrix_divided(matrix, -1.0))
-[[-1.0, -2.0, -3.0], [-4.0, -5.0, -6.0]]
-
-
-Error in usage:
-=========================================================
->>> matrix = [[1, 2, 3],[4, 5, 6]]
->>> print(matrix_divided(matrix, "j")) #doctest +IGNORE_EXCEPTION_DETAIL
-Traceback (most recent call last):
-TypeError: div must be a number
-
->>> matrix = None
->>> print(matrix_divided(matrix, 2))
-Traceback (most recent call last):
-TypeError: matrix must be a matrix (list of lists) of integers/floats
-
->>> matrix = [[1, 2, 3],[4, 5, 6]]
->>> print(matrix_divided(matrix, "true")) #doctest +IGNORE_EXCEPTION_DETAIL
-Traceback (most recent call last):
-TypeError: div must be a number
-
->>> matrix = [[1,2,3], [4,5,6,7]]
->>> print(matrix_divided(matrix, 2)) #doctest +IGNORE_EXCEPTION_DETAIL
-Traceback (most recent call last):
-TypeError: Each row of the matrix must have the same size
-
->>> matrix = [[1, 2, 3],[4, 5, 6]]
->>> print(matrix_divided(matrix, matrix)) #doctest +IGNORE_EXCEPTION_DETAIL
-Traceback (most recent call last):
-TypeError: div must be a number
-
->>> matrix = [[1, "jump", 3],[1, 3, 5]]
->>> print(matrix_divided(matrix, 3))
-Traceback (most recent call last):
-TypeError: matrix must be a matrix (list of lists) of integers/floats
-
->>> matrix = [[1, 2, 3], [4, 5, 6], {7, 8, 9}]
->>> print(matrix_divided(matrix, 2))
-Traceback (most recent call last):
-TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-========================================================================
