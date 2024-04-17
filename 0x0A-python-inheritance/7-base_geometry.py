@@ -3,6 +3,7 @@
 
 
 class BaseGeometry:
+    """ A class with two instances, area and integer_validation"""
     def area(self):
         raise Exception("area() is not implemented")
 
