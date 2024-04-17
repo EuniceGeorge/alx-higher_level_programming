@@ -53,4 +53,4 @@ class Rectangle(BaseGeometry):
         Returns:
             str: A string describing the rectangle.
         """
-        return (f"[Rectangle] {self.__width}/{self.__height}")
+        return ("[Rectangle] {}/{}".format(self.__width, self.__height))
