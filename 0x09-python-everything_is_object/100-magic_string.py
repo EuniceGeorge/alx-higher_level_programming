@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-void magic_string(PyObject *p):
-    return (0)
-print(void magic_string(PyObject *p)
+def magic_string(i=[0]):
+    i[0] += 1
+    return "BestSchool" * i[0]
