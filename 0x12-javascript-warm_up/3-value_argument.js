@@ -1,3 +1,7 @@
 #!/usr/bin/node
-const args = require('process');
-console.log(process.argv);
+// print process.argv
+if (process.argv[2]) {
+  console.log(process.argv[2]);
+} else {
+  console.log('No Argument');
+}
