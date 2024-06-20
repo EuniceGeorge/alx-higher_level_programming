@@ -10,7 +10,7 @@ if ((isNaN(len)) === true) {
   for (i = 0; i < len; i++) {
     let row = '';
     for (j = 0; j < len; j++) {
-      row += 'x';
+      row += 'X';
     }
     console.log(row);
   }
