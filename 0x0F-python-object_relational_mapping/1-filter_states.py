@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-"""script that lists all states from the database """
+"""script that lists all states that starts wwith letter 'N"""
 
 import MySQLdb
 import sys
