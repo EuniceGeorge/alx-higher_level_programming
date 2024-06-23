@@ -21,6 +21,7 @@ if __name__ == "__main__":
             "SELECT * FROM states WHERE name LIKE '{}' ORDER BY id ASC".format(n))
     query_rows = cur.fetchall()
     for row in query_rows:
-        print(row)
+        if row[1] == argv[4]:
+            print(row)
     cur.close()
     conn.close()
