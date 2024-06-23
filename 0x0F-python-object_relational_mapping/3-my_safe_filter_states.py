@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 """script that lists all states from the database """
@@ -18,7 +18,7 @@ if __name__ == "__main__":
             charset="utf8")
     cur = conn.cursor()
     cur.execute(
-            "SELECT * FROM states WHERE name LIKE '{:s}' ORDER BY id ASC".format(n))
+            "SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC")
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
