@@ -16,8 +16,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    obj = session.query(State).get(2)
-    print("name: ", obj.name)
-    obj.name = 'New Mexico'
+    obj = session.query(State).filter(State.name.like('%a%'))
+    for row in obj:
+        session.delete(row)
     session.commit()
     session.close()
