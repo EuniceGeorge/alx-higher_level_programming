@@ -15,7 +15,7 @@ if __name__ == "__main__":
     Base = declarative_base()
     session = Session()
 
-    for state in session.query(State).order_by(State.id)[:5]:
+    for state in session.query(State).order_by(State.id):
         if state:
             print("{}: {}".format(state.id, state.name))
         else:
