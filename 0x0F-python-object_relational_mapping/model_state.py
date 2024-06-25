@@ -7,11 +7,11 @@ from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
-engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
-    sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
-Session = sessionmaker(bind=engine)
+#engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
+    #sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
+#Session = sessionmaker(bind=engine)
 
-Base.metadata.create_all(engine)
+#Base.metadata.create_all(engine)
 
 
 class State(Base):
@@ -21,7 +21,7 @@ class State(Base):
     name = Column(String(128), nullable=False)
 
 
-session = Session()
-for state in session.query(State).order_by(State.id).all():
-    print("{}: {}".format(state.id, state.name))
-session.close()
+#session = Session()
+#for state in session.query(State).order_by(State.id).all():
+    #print("{}: {}".format(state.id, state.name))
+#session.close()
